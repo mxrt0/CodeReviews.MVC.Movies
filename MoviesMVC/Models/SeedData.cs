@@ -16,38 +16,43 @@ public class SeedData
             return;
         }
         context.Movie.AddRange(
-            new Movie
-            {
-                Title = "When Harry Met Sally",
-                ReleaseDate = DateTime.Parse("1989-2-12"),
-                Genre = "Romantic Comedy",
-                Rating = "R",
-                Price = 7.99M
-            },
-            new Movie
-            {
-                Title = "Ghostbusters",
-                ReleaseDate = DateTime.Parse("1984-3-13"),
-                Genre = "Comedy",
-                Rating = "PG-13",
-                Price = 8.99M
-            },
-            new Movie
-            {
-                Title = "Ghostbusters 2",
-                ReleaseDate = DateTime.Parse("1986-2-23"),
-                Genre = "Comedy",
-                Rating = "PG-13",
-                Price = 9.99M
-            },
-            new Movie
-            {
-                Title = "Rio Bravo",
-                ReleaseDate = DateTime.Parse("1959-4-15"),
-                Genre = "Western",
-                Rating = "PG",
-                Price = 3.99M
-            }
+           new Movie
+{
+    Title = "When Harry Met Sally",
+    ReleaseDate = DateTime.Parse("1989-2-12"),
+    Genre = "Romantic Comedy",
+    Rating = "R",
+    Price = 7.99M,
+    ImdbRating = 7.7
+},
+new Movie
+{
+    Title = "Ghostbusters",
+    ReleaseDate = DateTime.Parse("1984-3-13"),
+    Genre = "Comedy",
+    Rating = "PG-13",
+    Price = 8.99M,
+    ImdbRating = 7.8
+},
+new Movie
+{
+    Title = "Ghostbusters 2",
+    ReleaseDate = DateTime.Parse("1986-2-23"),
+    Genre = "Comedy",
+    Rating = "PG-13",
+    Price = 9.99M,
+    ImdbRating = 6.6
+},
+new Movie
+{
+    Title = "Rio Bravo",
+    ReleaseDate = DateTime.Parse("1959-4-15"),
+    Genre = "Western",
+    Rating = "PG",
+    Price = 3.99M,
+    ImdbRating = 8.0
+}
+	
         );
         context.SaveChanges();
 
